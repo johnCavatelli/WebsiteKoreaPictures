@@ -5,8 +5,36 @@
         "tags":["aj"]
     },
     "0077":{
-        "nickname":"mouth-adventure",
+        "nickname":"bye-abby",
         "vertical":false,
-        "tags":["aj"]
+        "tags":[]
+    },
+    "0078":{
+        "nickname":"somber-greeting",
+        "tags":[]
+    },
+    "0079":{
+        "nickname":"burning-ticket",
+        "tags":[]
+    },
+    "0080":{
+        "nickname":"hopeful-travelers",
+        "tags":[]
+    },
+    "0081":{
+        "nickname":"dallas-bound",
+        "tags":[]
+    },
+    "0082":{
+        "nickname":"mf-doom",
+        "tags":[]
+    },
+    "0083":{
+        "nickname":"sunrise-echoes",
+        "tags":[]
+    },
+    "0084":{
+        "nickname":"quiet-cabin-views",
+        "tags":[]
     }
 }
