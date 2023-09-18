@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 
 folder_path = './imgs/'
 file =  "DSCN0463.JPG"
-currPhoto = -1
+currPhoto = [-1]
 
 def loadImg(number):
     c.create_image(x, y, image=img, anchor=NW)
@@ -15,16 +15,17 @@ def loadImg(number):
 def click():
     text_info_1 = text1.get()
     label4.config(text="DSCN"+text_info_1+".JPG")
-    currPhoto = text_info_1
+    currPhoto[0] = text_info_1
     loadphoto()
 
 def loadphoto():
     c.delete("all")
-    newimg =  Image.open("./imgs/DSCN" + currPhoto + ".JPG")
-    c.create_image(0, 0, image=newimg, anchor=NW)
-
-
-
+    print("./imgs/DSCN" + currPhoto[0] + ".JPG")
+    newimg =  Image.open("./imgs/DSCN" + currPhoto[0] + ".JPG")
+    photoI = ImageTk.PhotoImage(newimg)
+    print(photoI)
+    d = Canvas(root, width=500, height=500)
+    d.pack()
 
 # Gui Config
 root = Tk()
