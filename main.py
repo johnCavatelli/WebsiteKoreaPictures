@@ -18,8 +18,8 @@ folder_path = './imgs'
 #short_image_names = list(map(lambda s: s[4:-4],image_names))
 #Scan folder for list of images
 for file in os.listdir(folder_path):
-    if int(file[4:-4]) < 913:
-        continue
+    # if int(file[4:-4]) < 913: #for filtering
+    #     continue
     image = Image.open(folder_path + "/" + file)
     date = image.getexif()[306]
     imgData = {"name":file,"date":date}
