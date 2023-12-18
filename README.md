@@ -1,5 +1,6 @@
 # Overview
+full res images are stored in imgs folder
+thumbnails made by main.py are in thumbs folder
+main.py is main script, that scans imgs folder, creates thumbnails and metadata.json for main website to consume
 
-individual (manually made) picture data is stored in picDAT.json. 
-images are stored in imgs folder
-main.py is main script, that scans imgs folder, and combines picDat.json with those images to put into metadata.json for main website to consume
+Scrapped feature of adding optional data and tags to images has functionality in pictag.py picDAT
